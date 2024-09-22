@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GLBB (Gerak Lurus Berubah Beraturan)</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>GLBB (Gerak Lurus Berubah Beraturan)</h1>
+	<p>               Gerak Lurus Berubah Beraturan adalah suatu gerak yang dilakukan oleh suatu benda dalam satu garis lurus dengan percepatan yang konstan.</p>
+	
+	<!-- Input fields for user input -->
+	<div class="input-fields">
+		<label for="initial-velocity">Kecepatan Awal (u):</label>
+		<input type="number" id="initial-velocity" value="0">
+		
+		<label for="acceleration">Percepatan (a):</label>
+		<input type="number" id="acceleration" value="0">
+		
+		<label for="time">Waktu (t):</label>
+		<input type="number" id="time" value="0">
+		
+		<button onclick="calculateGLBB()">Hitung</button>
+	</div>
+	
+	<!-- Output fields for results -->
+	<div class="output-fields">
+		<p>Kecepatan Akhir (v): <span id="final-velocity"></span></p>
+		<p>Perpindahan (s): <span id="displacement"></span></p>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
